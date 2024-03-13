@@ -1,3 +1,127 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'bootstrap/dist/css/bootstrap.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Importar Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400; /* Peso Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* Peso Semibold */
+    font-style: normal;
+}
+
+/* Estilo para los títulos en Semibold */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* Semibold */
+}
+
+/* Estilo para el texto en Regular */
+p, span, div, btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+
+
+thead {
+    background-color: #105295; /* Puedes cambiar este color según tus preferencias */
+    color: white; /* Color del texto en la cabecera */
+}
+
+
+.btn-green {
+    background-color: #2f855a;
+    color: #fff;
+    padding: -0.3rem 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-green:hover {
+    background-color: #2d9443;
+}
+
+
+.btn {
+    color: #fff;
+    padding: -0.3rem 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    color:white;
+}
+
+
+
+.btn-red {
+    background-color: #e3342f;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.btn-red:hover {
+    background-color: #cc1f1a;
+}
+
+.btn-blue {
+    background-color: #3490dc;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.btn-blue:hover {
+    background-color: #2779bd;
+}
+
+
+
+
+
+.btn-primary-normal {
+    /* Estilos específicos para el botón "Enviar" sin hover */
+    background-color: #3490dc; /* Color normal */
+    color: #fff; /* Color del texto */
+    border: 1px solid #3490dc; /* Borde */
+}
+
+.btn-primary-normal:hover {
+    /* Estilos adicionales cuando se hace hover (puedes dejar esto vacío si no quieres hover) */
+    background-color: #3490dc; /* Puedes mantener el mismo color o cambiarlo si deseas */
+}
+
+.btn-secondary {
+    /* Estilos específicos para el botón "Volver al Listado" */
+    background-color: #ccc; /* Color normal (gris) */
+    color: #333; /* Color del texto */
+    border: 1px solid #ccc; /* Borde */
+}
+
+.btn-secondary:hover {
+    /* Estilos adicionales cuando se hace hover */
+    background-color: #bbb; /* Puedes cambiar el color si deseas */
+}
+
+
+
+
